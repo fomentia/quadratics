@@ -19,7 +19,7 @@ func ** (num: Double, power: Double) -> Double {
 	return pow(num, power)
 }
 
-println("A =")
+println("\nA =")
 let a = input().stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet()).toDouble()
 
 println("B =")
@@ -28,8 +28,8 @@ let b = input().stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterS
 println("C =")
 let c = input().stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet()).toDouble()
 
-let solution = (-b+sqrt((b**2.0) - (4*a*c))) / (2*a)
-println("x = \(solution)")
+println("")
 
+let solution = (-b+sqrt((b**2.0) - (4*a*c))) / (2*a)
 let negative_solution = (-b-sqrt((b**2.0) - (4*a*c))) / (2*a)
-println("xnegative = \(negative_solution)")
+println("x = \(solution) AND x = \(negative_solution)\n")
