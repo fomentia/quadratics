@@ -4,7 +4,7 @@ import Darwin
 func input() -> String {
     var keyboard = NSFileHandle.fileHandleWithStandardInput()
     var inputData = keyboard.availableData
-    return NSString(data: inputData, encoding:NSUTF8StringEncoding)!
+    return NSString(data: inputData, encoding:NSUTF8StringEncoding)! as String
 }
 
 extension String {
